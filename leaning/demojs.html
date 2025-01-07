@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- more to learn: DOM manipulation, event, callback, AJAX, JSON
+        NODEJS: require, async io, node package, npm
+        ES6 () => {}, {... abc}, async/await, Promise -->
+        <script>
+            function printToN(n) {
+                for (let i = 1; i <= n; i++) {
+                    document.write(i + '<br/>')
+                }
+            }
+
+            printToN(5)
+        </script>
+        <script>
+            const input = 1
+            switch (input) {
+                case 1:
+                    console.log("1.nhap san pham")
+                    break;
+                case 2:
+                    console.log("2. in san pham")
+                    break;
+                case 3:
+                    break
+                default:
+                    break;
+            }
+        </script>
+        <script>
+            const num = 10;
+            if (num > 5) {
+                console.log("something")
+            } else {
+                console.log("print other")
+            }
+        </script>
+        <script>
+            const fruit = new Array(4)
+            fruit[0] = "mango"
+            fruit[1] = "apple"
+            fruit[2] = "orange"
+            fruit[3] = "watermelon"
+            console.log(fruit)
+            for (everyfruit of fruit) {
+                document.write(everyfruit + "<br/>")
+            }
+
+            for (let index = 0; index < fruit.length; index++) {
+                console.log({index})
+                const everyfruit = fruit[index] 
+                document.write(everyfruit + '<br/>')         
+            }
+        </script>
+        <script>
+            let sayhello = "Hello my friend, this is testing page"
+            document.write(sayhello.length)
+            document.write(sayhello.split(" "))
+
+        </script>
+        <br>
+        <script>
+            document.write("Hello world")
+            console.log("Hello world")
+        </script>
+        <br>
+        <script>
+            var name = "test"
+            let name1 = "test1"
+            const name2 = "test2"
+            document.write(name,name1,name2)
+        </script>
+        <br>
+        <script>
+            let firstnum = 1
+            let second = 2
+            document.write(firstnum + second)
+        </script>
+        <br>
+        <!-- object -->
+        <script>
+            let someone = {
+                name : "name",
+                male : true,
+                age : 35,
+                sing: function() {
+                    document.write("Hi, this is sing function")
+                }
+            };
+            document.write(someone.name)
+            someone.sing()
+        </script>
+    </body>
+</html>
