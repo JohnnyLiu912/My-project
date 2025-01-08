@@ -1,0 +1,57 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #555;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 800px;
+    height: 500px;
+    position: relative;
+    background: #222;
+}
+
+.clip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.clip1 {
+    background: url(https://media.istockphoto.com/id/2152856772/vi/anh/to%C3%A0n-c%E1%BA%A3nh-nh%E1%BB%AFng-ng%E1%BB%8Dn-n%C3%BAi-%C4%91%C6%B0%E1%BB%A3c-bao-quanh-b%E1%BB%9Fi-nh%E1%BB%AFng-c%C3%A2y-th%C3%B4ng-%E1%BB%9F-dolomites-%C3%BD.jpg?s=612x612&w=0&k=20&c=IWYsPkAs51YdP_xKf14N7xmrnG4ds7HLr2A0k6HtT3M=
+    );
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 21% 0, 42% 100%, 0% 100%);;
+}
+
+.clip2 {
+    background: url(https://media.istockphoto.com/id/1215208794/vi/anh/phong-c%E1%BA%A3nh-n%C3%BAi-cao-b%C3%ACnh-d%E1%BB%8B-val-di-funes-d%C3%A3y-n%C3%BAi-dolomites-alps-%C3%BD.jpg?s=612x612&w=0&k=20&c=a1ASEgzR1fhW5lkJUmAQUU3lmsj3L1cLwhMLLwvrKsk=
+    );
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(80% 0, 21% 0, 42% 100%, 70% 100%);
+}
+
+.clip3 {
+    background: url(https://media.istockphoto.com/id/919759854/vi/anh/dolomites-t%E1%BA%A7m-nh%C3%ACn-t%E1%BB%AB-tr%C3%AAn-kh%C3%B4ng-c%E1%BB%A7a-vago-di-fassa-%C3%BD-ch%C3%A2u-%C3%A2u-n%C3%BAi-dolomites.jpg?s=612x612&w=0&k=20&c=RRkHxJYA4VMYrcowJEpDCfrLKTV4TlKtM42PcHZU8is=
+    );
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(80% 0, 100% 0, 100% 100%, 70% 100%);
+}
+
+.container:hover .clip {
+    clip-path: polygon(100% 0,100% 0,100% 100%, 63% 100%);
+}
+
+.container .clip:hover {
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+}
